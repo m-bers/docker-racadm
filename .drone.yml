@@ -12,7 +12,6 @@ steps:
     image: python:alpine
     commands:
       - pip3 install --quiet yamllint
-      - yamllint  --config-file .yamllint.config --strict *.yml
       - yamllint  --config-file .yamllint.config --strict .*.yml
 
   - name: markdownlint
