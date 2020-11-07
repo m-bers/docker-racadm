@@ -3,7 +3,7 @@
 ## build
 
 ```
-docker build -t docker-racadm:latest $(pwd)
+docker build -t docker-racadm:latest .
 ```
 
 ## setup alias
