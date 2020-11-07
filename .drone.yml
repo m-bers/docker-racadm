@@ -14,15 +14,18 @@ steps:
       - pip3 install --quiet yamllint
       - yamllint  --config-file .yamllint.config --strict *.yml
       - yamllint  --config-file .yamllint.config --strict .*.yml
+    depends_on: [clone]
 
   - name: markdownlint
     image: ruby:alpine
     commands:
       - gem install mdl
       - mdl readme.md
+    depends_on: [clone]
 
   - name: hadolint
     image: hadolint/hadolint:latest-debian
     commands:
       - hadolint --version
       - hadolint  Dockerfile
+    depends_on: [clone]
