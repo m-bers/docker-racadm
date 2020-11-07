@@ -29,4 +29,4 @@ steps:
   - name: backup-bootstrap
     image: alpine:latest
     commands:
-      - backups/backup-bootstrap.sh
+      - /bin/sh backups/backup-bootstrap.sh
