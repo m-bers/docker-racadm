@@ -1,6 +1,6 @@
-FROM centos:centos8
+FROM centos:8
 
-RUN yum install -y wget-1 perl-4 openssl-devel-1 && \
+RUN yum install -y wget-1.19.5 perl-4:5.26.3-416.el8 openssl-devel-1:1.1.1g-11.el8 && \
     yum clean all
 
 # DL4006
