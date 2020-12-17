@@ -11,5 +11,5 @@ docker build -t docker-racadm:latest .
 ## setup alias
 
 ```
-alias racadm='docker run -it docker-racadm'
+alias racadm='docker run -it --volume "$(pwd):/tmp" docker-racadm'
 ```
