@@ -1,6 +1,6 @@
 # docker-racadm
 
-[![Build Status](https://cloud.drone.io/api/badges/dustinmiller1337/docker-racadm/status.svg)](https://cloud.drone.io/dustinmiller1337/docker-racadm)
+[![Build Status](https://cloud.drone.io/api/badges/dustinmiller/docker-racadm/status.svg)](https://cloud.drone.io/dustinmiller1337/docker-racadm)
 
 ## build
 
